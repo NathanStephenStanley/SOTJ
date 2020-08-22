@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(40, 184, 79);
+    font: bold 15px Arial, Helvitica, sans-serif;
+    overflow: scroll;
+}
+#nav-bar {
+    width: 100%;
+    background-color: rgb(7, 148, 87);
+    height: 80px;
+    margin-Top: 0px;
+}
+#nav-bar a {
+    width: 283.5px;
+    height: 60px;
+    float: left;
+    background-color: rgb(7, 148, 87);
+    text-decoration: none;
+    color: white;
+    font: bold 24px Arial;
+    text-align: center;
+    padding: 10px;
+    transition-duration: 1s;
+}
+#nav-bar a:hover {
+    background-color: rgb(3, 252, 102);
+    color: black;
+}
+
+#header {
+    background-color: rgb(3, 252, 115);
+    height: 200px;
+    color: black;
+    font: bold 50px Arial, Helvitica, sans-serif;
+    text-align: center;
+
+}
+#login {
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid green;
+    margin-Top: 50px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+input[type=text], input[type=password], input[type=email]{
+    width: 70%;
+    height: 42px;
+    border-radius: 15px;
+    margin-Right: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+#login-button {
+    width: 80%;
+    height: 30px;
+    margin-Top: 15px;
+    background-color: #5bde10;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
