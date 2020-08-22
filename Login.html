@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="Login.js"></script>
+    <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="appleid-signin-client-id" content="[CLIENT_ID]">
+    <meta name="appleid-signin-scope" content="[SCOPES]">
+    <meta name="appleid-signin-redirect-uri" content="[REDIRECT_URI]">
+    <meta name="appleid-signin-state" content="[STATE]">
+    <meta name="appleid-signin-nonce" content="[NONCE]">
+    <meta name="appleid-signin-use-popup" content="true"> <!-- or false defaults to false -->
+    <meta name="google-signin-client_id"
+          content="515659403427-urm1nprglc4m9na93bch0s2ld0ebp4ma.apps.googleusercontent.com">
+    <title>SOTJ Login</title>
+</head>
+<header id="header">Survivors of the Jungle<br>Login Page</header>
+<!--Style the Nav-Bar-->
+<header>
+    <nav id="nav-bar">
+        <a href="SOTJ.html"><h1>Home Page</h1></a>
+        <a href="HTP.html"><h1>How to Play</h1></a>
+        <a href="About SOTJ.html"><h1>About SOTJ</h1></a>
+        <a href="Login.html"><h1>Login</h1></a>
+        <a href="Download.html"><h1>Download</h1></a>
+    </nav>
+</header>
+<body>
+<div>
+    <center>
+        <form name="login" id="login" method="post">
+            <div id="error"></div>
+            <h1><b>SOTJ Login</b></h1>
+            <br>
+            <br>
+            <label for="email">Email Adrre</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <br>
+            <br>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <br>
+            <br>
+            <label for="remember-me" id="label">Remember Me</label>
+            <input type="checkbox" id="remember-me" name="remember me"> Forgot<a href="#"> Password</a> ?
+            <button type="submit" id="login-button">Login</button>
+            <br>
+            <br>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <br>
+            <div id="appleid-signin" data-color="white" data-border="true" data-type="sign in"></div>
+        </form>
+    </center>
+</div>
+</body>
+</html>
