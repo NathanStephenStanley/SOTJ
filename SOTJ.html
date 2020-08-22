@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is an HTML5 Document">
+    <meta name="keywords" content="HMTL, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> SOTJ </title>
+    <link rel="stylesheet" href="SOTJ.css">
+</head>
+<body>
+<!--Add a Header to show the User the Page that they are on-->
+<header id="header">Survivors of the Jungle<br>Home Page</header>
+<!--Design a Nav-Bar User Navigation-->
+<header>
+    <nav id="nav-bar">
+        <a href="SOTJ.html"><h1>Home Page</h1></a>
+        <a href="HTP.html"><h1>How to Play</h1></a>
+        <a href="About SOTJ.html"><h1>About SOTJ</h1></a>
+        <a href="test.html"><h1>Login</h1></a>
+        <a href="Download.html"><h1>Download</h1></a>
+        <a href="SOTJ-Voral.html"><h1>SOTJ-Voral</h1></a>
+        <a href="https://www.voral.net"><h1>Voral Website</h1>
+
+    </nav>
+</header>
+<!--Script Source-->
+<script src="SOTJ.js"></script>
+<SCRIPT>
+function onSignIn(googleUser) {
+var profile = googleUser.getBasicProfile();
+console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+console.log('Name: ' + profile.getName());
+console.log('Image URL: ' + profile.getImageUrl());
+console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</SCRIPT>
+
+</body>
+</html>
